@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Restaurant Menu</h1>
+        </header>
+        <main>
+            <div id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li>
+                        <span>Pizza</span>
+                        <span>$10</span>
+                        <button class="add-item" data-name="Pizza" data-price="10">Add</button>
+                    </li>
+                    <li>
+                        <span>Burger</span>
+                        <span>$8</span>
+                        <button class="add-item" data-name="Burger" data-price="8">Add</button>
+                    </li>
+                    <li>
+                        <span>Pasta</span>
+                        <span>$12</span>
+                        <button class="add-item" data-name="Pasta" data-price="12">Add</button>
+                    </li>
+                    <li>
+                        <span>Salad</span>
+                        <span>$7</span>
+                        <button class="add-item" data-name="Salad" data-price="7">Add</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="cart">
+                <h2>Cart</h2>
+                <ul id="cart-items"></ul>
+                <div id="total">
+                    <strong>Total:</strong> $<span id="total-amount">0</span>
+                </div>
+                <button id="checkout">Checkout</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
